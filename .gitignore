@@ -1,0 +1,30 @@
+# Bicep build artifacts
+*.json.bak
+**/main.json
+**/*.compiled.json
+
+# Azure CLI / deployment artifacts
+.azure/
+*.deployment.json
+
+# Secrets — never commit
+*.secrets.json
+*.local.parameters.json
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# PowerShell
+*.ps1xml.bak
+
+# Logs
+*.log
